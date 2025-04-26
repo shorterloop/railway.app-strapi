@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_call_to_actions",
+  "info": {
+    "displayName": "Call to Action",
+    "icon": "emotionHappy"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string",
+      "required": true,
+      "default": "Start Free Trial"
+    },
+    "URL": {
+      "type": "string",
+      "required": true,
+      "default": "https://app.shorterloop.com/register"
+    },
+    "Variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "ghost"
+      ],
+      "default": "primary"
+    }
+  }
+}
