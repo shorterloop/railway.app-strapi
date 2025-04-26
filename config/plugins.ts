@@ -36,30 +36,7 @@ export default ({ env }) => ({
                 upload: {},
                 uploadStream: {},
                 delete: {},
-            },
-
-            contentSecurityPolicy: {
-                useDefaults: true,
-                directives: {
-                  "connect-src": ["'self'", "https:"],
-                  "img-src": [
-                    "'self'",
-                    "data:",
-                    "blob:",
-                    "https://market-assets.strapi.io",
-                    "https://cdn.shorterloop.com", // ✅ Add this
-                  ],
-                  "media-src": [
-                    "'self'",
-                    "data:",
-                    "blob:",
-                    "https://market-assets.strapi.io",
-                    "https://cdn.shorterloop.com", // ✅ Add this
-                  ],
-                  upgradeInsecureRequests: null,
-                },
             }
-
         },
     },
 });
