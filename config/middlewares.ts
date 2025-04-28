@@ -32,7 +32,8 @@ export default [
             "https://cdn.shorterloop.com", // ✅ Allow CDN videos/audio
           ],
           "frame-src": ["'self'"],
-          'script-src': ['https://cdn.ckeditor.com']
+          'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net', 'cdn.ckeditor.com', 'https://cdn.ckeditor.com'],
+
         },
       },
     },
