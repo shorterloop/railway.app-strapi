@@ -95,7 +95,13 @@ export interface SharedFeatureCard extends Struct.ComponentSchema {
   };
   attributes: {
     callToAction: Schema.Attribute.Component<'shared.call-to-action', true>;
-    Description: Schema.Attribute.RichText & Schema.Attribute.Required;
+    Description: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     Media: Schema.Attribute.Media<'images' | 'files' | 'videos', true>;
     Text: Schema.Attribute.String & Schema.Attribute.Required;
   };
