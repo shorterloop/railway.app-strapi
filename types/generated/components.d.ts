@@ -25,9 +25,7 @@ export interface SharedCallToAction extends Struct.ComponentSchema {
     Label: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'Start Free Trial'>;
-    URL: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<'https://app.shorterloop.com/register'>;
+    URL: Schema.Attribute.String;
     Variant: Schema.Attribute.Enumeration<
       ['primary', 'secondary', 'outline', 'ghost', 'none']
     > &

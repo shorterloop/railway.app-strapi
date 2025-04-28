@@ -14,8 +14,8 @@
     },
     "URL": {
       "type": "string",
-      "required": true,
-      "default": "https://app.shorterloop.com/register"
+      "required": false,
+      "default": ""
     },
     "Variant": {
       "type": "enumeration",
