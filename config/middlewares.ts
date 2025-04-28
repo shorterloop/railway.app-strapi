@@ -16,7 +16,7 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
+          "connect-src": ["'self'", "https:", "https://proxy-event.ckeditor.com"],
           "img-src": [
             "'self'",
             "data:",
@@ -32,6 +32,7 @@ export default [
             "https://cdn.shorterloop.com", // ✅ Allow CDN videos/audio
           ],
           "frame-src": ["'self'"],
+          'script-src': ['https://cdn.ckeditor.com']
         },
       },
     },

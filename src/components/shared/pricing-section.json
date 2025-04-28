@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_pricing_sections",
+  "info": {
+    "displayName": "Pricing Section",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "pricingCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.pricing-cards"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.call-to-action"
+    }
+  }
+}

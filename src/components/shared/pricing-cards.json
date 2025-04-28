@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_shared_pricing_cards",
+  "info": {
+    "displayName": "Pricing Cards",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "planName": {
+      "type": "string",
+      "required": true
+    },
+    "Summary": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.short-pricing-features"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.call-to-action"
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "yearly",
+        "monthly"
+      ],
+      "default": "yearly",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "USD",
+        "EURO",
+        "INR"
+      ],
+      "default": "USD",
+      "required": true
+    }
+  }
+}

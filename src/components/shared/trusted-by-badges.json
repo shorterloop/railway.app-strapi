@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_trusted_by_badges",
+  "info": {
+    "displayName": "Customer Recognition",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "badges": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.badge-item"
+    }
+  }
+}

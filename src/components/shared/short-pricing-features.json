@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_short_pricing_features",
+  "info": {
+    "displayName": "Pricing Features",
+    "icon": "crop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.call-to-action"
+    }
+  }
+}

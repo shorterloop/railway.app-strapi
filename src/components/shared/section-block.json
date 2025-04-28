@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_section_blocks",
+  "info": {
+    "displayName": "Section Block",
+    "icon": "arrowLeft",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature-card"
+    },
+    "Text": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

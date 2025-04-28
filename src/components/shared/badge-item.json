@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_badge_items",
+  "info": {
+    "displayName": "Badge Item",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "Caption": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Alt": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

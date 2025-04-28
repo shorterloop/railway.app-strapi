@@ -4,6 +4,12 @@ export default ({ env }) => ({
             jwtSecret: env('JWT_SECRET'),
         },
     },
+    seo: {
+        enabled: true,
+    },
+    ckeditor:  {
+        enabled: true,
+    },
     upload: {
         config: {
             provider: "strapi-provider-cloudflare-r2",

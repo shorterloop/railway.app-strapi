@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "megamenus",
+  "info": {
+    "singularName": "megamenu",
+    "pluralName": "megamenus",
+    "displayName": "megamenu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "menuSections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-section"
+    }
+  }
+}

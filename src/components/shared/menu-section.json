@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_menu_sections",
+  "info": {
+    "displayName": "Menu Section",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "required": true
+    },
+    "sectionDescription": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.call-to-action"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

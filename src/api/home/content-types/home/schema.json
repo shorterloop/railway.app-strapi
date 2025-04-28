@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.hero"
+    },
+    "trustedByQuotation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.quotation"
+    },
+    "customerRecognition": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.trusted-by-badges"
+    },
+    "capabilities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.content-group"
+    },
+    "framework": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.feature-card"
+    },
+    "pricing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.pricing-section"
+    },
+    "feature": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.content-group"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-section"
+    },
+    "footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.footer"
+    }
+  }
+}

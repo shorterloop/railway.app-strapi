@@ -11,7 +11,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^6.0.0",
+    "@ckeditor/strapi-plugin-ckeditor": "^1.1.1",
     "@strapi/plugin-cloud": "5.11.3",
+    "@strapi/plugin-seo": "^2.0.8",
     "@strapi/plugin-users-permissions": "5.11.3",
     "@strapi/provider-upload-cloudinary": "5.11.3",
     "@strapi/strapi": "5.11.3",

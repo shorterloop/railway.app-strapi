@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_quotations",
+  "info": {
+    "displayName": "Quotation",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Author": {
+      "type": "string"
+    },
+    "Role": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

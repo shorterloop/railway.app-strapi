@@ -1,8 +1,9 @@
 {
   "collectionName": "components_shared_call_to_actions",
   "info": {
-    "displayName": "Call to Action",
-    "icon": "emotionHappy"
+    "displayName": "Link Item",
+    "icon": "emotionHappy",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -22,9 +23,21 @@
         "primary",
         "secondary",
         "outline",
-        "ghost"
+        "ghost",
+        "none"
       ],
       "default": "primary"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
