@@ -28,16 +28,7 @@
       "repeatable": true,
       "component": "shared.call-to-action"
     },
-    "mode": {
-      "type": "enumeration",
-      "enum": [
-        "yearly",
-        "monthly"
-      ],
-      "default": "yearly",
-      "required": true
-    },
-    "amount": {
+    "yearlyAmount": {
       "type": "decimal"
     },
     "currency": {
@@ -49,6 +40,23 @@
       ],
       "default": "USD",
       "required": true
+    },
+    "monthlyAmount": {
+      "type": "decimal"
+    },
+    "monthlyPlanDescription": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "yearlyPlanDescription": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

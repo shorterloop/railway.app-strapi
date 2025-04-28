@@ -22,9 +22,13 @@ export interface SharedCallToAction extends Struct.ComponentSchema {
   };
   attributes: {
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Label: Schema.Attribute.String &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<'Start Free Trial'>;
+    Label: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     URL: Schema.Attribute.String;
     Variant: Schema.Attribute.Enumeration<
       ['primary', 'secondary', 'outline', 'ghost', 'none']

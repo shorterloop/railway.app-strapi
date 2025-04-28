@@ -7,15 +7,9 @@
   },
   "options": {},
   "attributes": {
-    "Label": {
-      "type": "string",
-      "required": true,
-      "default": "Start Free Trial"
-    },
     "URL": {
       "type": "string",
-      "required": false,
-      "default": ""
+      "required": false
     },
     "Variant": {
       "type": "enumeration",
@@ -38,6 +32,13 @@
         "videos",
         "audios"
       ]
+    },
+    "Label": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
