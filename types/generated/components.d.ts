@@ -140,12 +140,19 @@ export interface SharedHeader extends Struct.ComponentSchema {
 export interface SharedHero extends Struct.ComponentSchema {
   collectionName: 'components_shared_heroes';
   info: {
+    description: '';
     displayName: 'Hero';
     icon: 'bell';
   };
   attributes: {
     cta: Schema.Attribute.Component<'shared.call-to-action', true>;
-    headline: Schema.Attribute.String & Schema.Attribute.Required;
+    headline: Schema.Attribute.RichText &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
     media: Schema.Attribute.Component<'shared.media', true>;
     subHeadline: Schema.Attribute.RichText &
       Schema.Attribute.Required &
