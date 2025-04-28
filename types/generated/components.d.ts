@@ -194,15 +194,23 @@ export interface SharedMenuSection extends Struct.ComponentSchema {
 export interface SharedPricingCards extends Struct.ComponentSchema {
   collectionName: 'components_shared_pricing_cards';
   info: {
+    description: '';
     displayName: 'Pricing Cards';
     icon: 'crown';
   };
   attributes: {
+    amount: Schema.Attribute.Decimal;
     cta: Schema.Attribute.Component<'shared.call-to-action', true>;
+    currency: Schema.Attribute.Enumeration<['USD', 'EURO', 'INR']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'USD'>;
     features: Schema.Attribute.Component<
       'shared.short-pricing-features',
       false
     >;
+    mode: Schema.Attribute.Enumeration<['yearly', 'monthly']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'yearly'>;
     planName: Schema.Attribute.String & Schema.Attribute.Required;
     Summary: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
