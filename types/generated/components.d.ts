@@ -327,7 +327,7 @@ export interface SharedTrustedByBadges extends Struct.ComponentSchema {
     icon: 'briefcase';
   };
   attributes: {
-    badges: Schema.Attribute.Component<'shared.badge-item', false>;
+    badges: Schema.Attribute.Component<'shared.badge-item', true>;
     heading: Schema.Attribute.String;
   };
 }
